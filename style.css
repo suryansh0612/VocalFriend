@@ -1,0 +1,115 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-image: url('download.png');
+    background-size: cover;
+    background-position: center;
+}
+
+.heading {
+    display: flex;
+    align-items: center; /* Align items vertically */
+}
+
+.logo {
+    width: 100px; /* Adjust the width as needed */
+    height: auto; /* Let the height adjust proportionally */
+    margin-right: 20px; /* Add some space between the logo and the heading */
+}
+
+.container {
+    width: 80%;
+    margin: 0 auto;
+}
+
+header {
+    background-color: #9ad3de;
+    color: #fff;
+    padding: 20px 0;
+}
+
+header nav {
+    display: flex;
+    justify-content: space-around; /* Center items horizontally */
+}
+
+header nav ul {
+    list-style-type: none;
+    padding: 0;
+    display: flex; /* Use flexbox to align items */
+}
+
+header nav ul li {
+    margin-right: 20px;
+}
+
+header nav ul li:last-child {
+    margin-right: 0;
+}
+
+header nav ul li a {
+    color: #fff;
+    text-decoration: none;
+}
+
+#hero {
+    background-color: #eaeff7;
+    padding: 50px 0;
+    text-align: center;
+}
+
+textarea {
+    width: 80%;
+    height: 200px;
+    resize: none;
+    margin: 20px auto;
+    display: block;
+    border: 1px solid #ccc;
+    padding: 10px;
+    border-radius: 5px;
+}
+
+label {
+    display: block;
+    margin-top: 20px;
+    color: #555;
+}
+
+select {
+    padding: 10px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    background-color: #fff;
+    color: #555;
+}
+
+button {
+    padding: 10px 20px;
+    background-color: #9ad3de;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+    margin: 10px 0;
+}
+
+button:hover {
+    background-color: #7cb8c8;
+}
+
+footer {
+    background-color: #9ad3de;
+    color: #fff;
+    padding: 20px 0;
+    text-align: center;
+}
+
+h2 {
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    color: #444444;
+}
+
+#textlabel {
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}

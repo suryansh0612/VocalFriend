@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>VocalFriend</title>
+    <link rel="icon" href="logo2.png" type="image/x-icon">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <div class="container">
+            <div class="heading">
+                <img class="logo" src="logo.png" alt="Logo">
+                <h1>VocalFriend: A free text to speech converter.</h1>
+            </div>
+            <nav>
+                <ul>
+                    <li><a href="http://127.0.0.1:5500/content.html#home" target="_blank">Home</a></li>
+                    <li><a href="http://127.0.0.1:5500/content.html#about" target="_blank">About</a></li>
+                    <li><a href="http://127.0.0.1:5500/content.html#services" target="_blank">Services</a></li>
+                    <li><a href="http://127.0.0.1:5500/content.html#contact" target="_blank">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <section id="hero">
+        <div class="container">
+            <h2>Transforming Text into Expressive Speech</h2>
+            <p id="textlabel">Enter your text below and let us convert it into natural-sounding speech.</p>
+            <textarea id="text-to-convert" placeholder=""></textarea>
+            <label for="language-select">Select Language:</label>
+            <select id="language-select"></select>
+            <label for="voice-select">Select Voice:</label>
+            <select id="voice-select"></select>
+            <button id="convert-btn">Convert</button>
+            <button id="stop-btn">Stop</button>
+        </div>
+    </section>
+
+    <footer>
+        <div class="container">
+            <p>&copy; VocalizeMe Text-To-Speech Converter</p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+    <script>
+        document.getElementById("language-select").addEventListener("change", function() {
+            var selectElement = this;
+            var placeholderOption = selectElement.querySelector("option[value='']");
+            if (placeholderOption) {
+                placeholderOption.remove();
+            }
+        });
+
+        document.getElementById("voice-select").addEventListener("change", function() {
+            var selectElement = this;
+            var placeholderOption = selectElement.querySelector("option[value='']");
+            if (placeholderOption) {
+                placeholderOption.remove();
+            }
+        });
+    </script>
+</body>
+</html>
